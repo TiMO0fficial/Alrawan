@@ -1,54 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A complete modern product showcase page with responsive design and WCAG 2.2 accessibility compliance.">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Product Showcase"
-        }
-    </script>
-    <title>Product Showcase</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <meta name="description" content="منتجات مميزة في مجالات الهواتف، الاكسسوارات، العطور، والصيانة.">
+    <title>عرض المنتجات</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #ccc; padding: 10px; border-radius: 5px; }
+        h2 { color: #337ab7; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Product Showcase</h1>
-            <button aria-label="Shopping Cart">🛒</button>
-        </nav>
-    </header>
-    <main>
-        <section class="products">
-            <div class="product-card" aria-labelledby="product1">
-                <h2 id="product1">Premium Leather Wallet</h2>
-                <p>$49.99</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" aria-labelledby="product2">
-                <h2 id="product2">Smart Watch Pro</h2>
-                <p>$199.99</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" aria-labelledby="product3">
-                <h2 id="product3">Wireless Headphones</h2>
-                <p>$89.99</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card" aria-labelledby="product4">
-                <h2 id="product4">Digital Camera</h2>
-                <p>$299.99</p>
-                <button>Add to Cart</button>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>Company Info</p>
-        <p>Follow us on social media.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>مرحبا بكم في متجرنا</h1>
+            <p>استعرض مجموعة مذهلة من المنتجات.</p>
+        </header>
+        <main>
+            <section>
+                <h2>الهواتف</h2>
+                <div class="grid">
+                    <div class="card"><h3>هاتف 1</h3><p>وصف الهاتف 1.</p></div>
+                    <div class="card"><h3>هاتف 2</h3><p>وصف الهاتف 2.</p></div>
+                    <div class="card"><h3>هاتف 3</h3><p>وصف الهاتف 3.</p></div>
+                    <div class="card"><h3>هاتف 4</h3><p>وصف الهاتف 4.</p></div>
+                </div>
+            </section>
+            <section>
+                <h2>الاكسسوارات</h2>
+                <div class="grid">
+                    <div class="card"><h3>اكسسوار 1</h3><p>وصف اكسسوار 1.</p></div>
+                    <div class="card"><h3>اكسسوار 2</h3><p>وصف اكسسوار 2.</p></div>
+                    <div class="card"><h3>اكسسوار 3</h3><p>وصف اكسسوار 3.</p></div>
+                    <div class="card"><h3>اكسسوار 4</h3><p>وصف اكسسوار 4.</p></div>
+                </div>
+            </section>
+            <section>
+                <h2>العطور</h2>
+                <div class="grid">
+                    <div class="card"><h3>عطر 1</h3><p>وصف عطر 1.</p></div>
+                    <div class="card"><h3>عطر 2</h3><p>وصف عطر 2.</p></div>
+                    <div class="card"><h3>عطر 3</h3><p>وصف عطر 3.</p></div>
+                    <div class="card"><h3>عطر 4</h3><p>وصف عطر 4.</p></div>
+                </div>
+            </section>
+            <section>
+                <h2>الصيانة</h2>
+                <div class="grid">
+                    <div class="card"><h3>خدمة صيانة 1</h3><p>وصف خدمة صيانة 1.</p></div>
+                    <div class="card"><h3>خدمة صيانة 2</h3><p>وصف خدمة صيانة 2.</p></div>
+                    <div class="card"><h3>خدمة صيانة 3</h3><p>وصف خدمة صيانة 3.</p></div>
+                    <div class="card"><h3>خدمة صيانة 4</h3><p>وصف خدمة صيانة 4.</p></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 TiMO0fficial</p>
+        </footer>
+    </div>
 </body>
 </html>
